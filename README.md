@@ -1,2 +1,2 @@
 # js-basic-practice
-PractiCe exercises from Mozilla Developer Network(MDN)
+Practice exercises from Mozilla Developer Network(MDN)
