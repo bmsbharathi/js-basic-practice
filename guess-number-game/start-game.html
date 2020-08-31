@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Guess the number games </title>
+    <link rel="stylesheet" href="styles/game-style.css">
+    <script src="scripts/game-script.js" defer></script>
+</head>
+
+<body>
+    <h1>Guess the number</h1>
+    <div id="gameArea">
+        <input type="number" name="guess" id="guess" maxlength="2" required>
+        <button id="game">Guess!</button></div>
+    <div id="resultArea">
+        <p id="remainingGuess"></p>
+        <p id="previousGuesses"></p>
+        <p id="result"></p>
+    </div>
+    <button id="reset" onclick="reset()">Reset Game</button>
+</body>
+
+</html>

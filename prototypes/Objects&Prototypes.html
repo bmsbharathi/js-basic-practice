@@ -1,0 +1,22 @@
+<html>
+<script>
+    function Person(voice) {
+        this.voice = voice;
+    }
+    Person.prototype.speak = function() {
+        console.log(this.voice || 'Speaking..now');
+    }
+
+    function Student() {
+        Person.call(this, 'Yo guys!');
+        this.name = 'Kohli',
+            age = 33
+    }
+    Student.prototype = Object.create(Person.prototype);
+    let kumar = new Student();
+
+
+    kumar.speak();
+</script>
+
+</html>
