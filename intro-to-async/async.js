@@ -3,10 +3,11 @@ let para = document.querySelector('p');
 // const worker = new Worker('worker.js'); //actual code to invoke a worker in a hosted environment
 
 /** Since chrome does not allow to invoke a worker. Converting the function as a blob and making it a worker*/
-var worker = new Worker(URL.createObjectURL(new Blob(["(" + worker_function.toString() + ")()"], { type: 'text/javascript' })));
+const worker = new Worker(URL.createObjectURL(new Blob(["(" + worker_function.toString() + ")()"], { type: 'text/javascript' })));
 
 btn.addEventListener('click', () => {
 
+    para.textContent = '';
     worker.postMessage('startLoop');
 
 

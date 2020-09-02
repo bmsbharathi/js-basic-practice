@@ -2,6 +2,7 @@ let btn = document.querySelector('button');
 let para = document.querySelector('p');
 
 btn.addEventListener('click', () => {
+    para.textContent = '';
     for (let i = 0; i < 10000000000; i++) {
 
     }
