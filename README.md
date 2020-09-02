@@ -1,2 +1,4 @@
 # js-basic-practice
-Practice exercises from Mozilla Developer Network(MDN)
+Basic practice exercises from Mozilla Developer Network(MDN)
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
